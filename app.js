@@ -22,17 +22,14 @@ const app = express()
 // CORS
 app.use((req, res, next) => {
     if(req.path !== '/' && !req.path.includes('.')){
-        if(req.headers.origin == ‘https://wanghandi.top’ || req.headers.origin == ‘https://whhjdi.github.io’){
             res.header({
                 'Access-Control-Allow-Credentials': true,
-                'Access-Control-Allow-Origin': req.headers.origin,
-                //'Access-Control-Allow-Origin': "https://wanghandi.top",
+                //'Access-Control-Allow-Origin': req.headers.origin,
+                'Access-Control-Allow-Origin': "https://whhjdi.github.io",
                 'Access-Control-Allow-Headers': 'X-Requested-With',
                 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS',
                 'Content-Type': 'application/json; charset=utf-8'
             })
-        }
-        
     }
     next()
 })
