@@ -25,8 +25,8 @@ app.use((req, res, next) => {
             res.header({
                 'Access-Control-Allow-Credentials': true,
                 //'Access-Control-Allow-Origin': req.headers.origin,
-                //'Access-Control-Allow-Origin': "https://whhjdi.github.io",
-                'Access-Control-Allow-Origin': "https://whhjdi.xyz",
+                'Access-Control-Allow-Origin': "https://whhjdi.github.io",
+                //'Access-Control-Allow-Origin': "https://whhjdi.xyz",
                 'Access-Control-Allow-Headers': 'X-Requested-With',
                 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS',
                 'Content-Type': 'application/json; charset=utf-8'
